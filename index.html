@@ -1,0 +1,137 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>随机密码生成器 - 珂泽在线工具</title>
+<meta name="keywords" content="kaygb,珂泽在线工具,随机密码生成器,密码生成器,随机密码">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/kaygb/twentytwenty/kaygbcom/icon/f1.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<style>
+    body{
+        overflow-y: scroll;
+    }
+</style>
+</head>
+
+<body class="" style="background:#f5f6fa">
+	<nav class="navbar navbar-dark bg-dark fixed-top shadow-sm ">
+		<div class="container"> 
+			<a class="navbar-brand" href="./">珂泽在线工具</a>
+
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link" href="//www.kaygb.com" target="_blank">Home</a>
+<a class="nav-link" href="//blog.kaygb.com" target="_blank">BLOG</a>
+<a class="nav-link" href="//github.com/kaygb" target="_blank">Github</a>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron jumbotron-fluid" style="margin-top: 48px;">
+		<div class="container">
+			 <h1 class="display-4">随机密码生成器</h1>
+
+			<p class="lead">生成高强度的密码</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+			    
+				<div class="card border-0 shadow-sm mb-4 rounded-0">
+					
+					<div class="card-body">
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" checked="checked"  type="checkbox" id="num" value="">
+							<label class="form-check-label" for="num">0-9</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" checked="checked"  type="checkbox" id="upA" value="">
+							<label class="form-check-label" for="upA">A-Z</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" checked="checked"  type="checkbox" id="lowA" value="">
+							<label class="form-check-label" for="lowA">a-z</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="special" value="">
+							<label class="form-check-label" for="special">特殊符号</label>
+						  </div>
+						  
+						  <div class="input-group input-group-sm mb-3 mt-3">
+							<div class="input-group-prepend">
+							  <span class="input-group-text" id="ps_cd">密码长度</span>
+							</div>
+							<input type="text" id="ipt_len" value="12" class="form-control" aria-describedby="inputGroup-sizing-sm">
+						  </div>
+						  <div class="input-group input-group-sm mb-3 mt-3">
+							<div class="input-group-prepend">
+							  <span class="input-group-text" id="ps_res">生成结果</span>
+							</div>
+							<input type="text" id="txt_opt" class="form-control" aria-describedby="inputGroup-sizing-sm">
+						  </div>
+						  <button type="button" value="OK" id="confirm" class="btn btn-success">生成密码</button>
+
+					</div>
+				
+				</div>
+				<div class="mb-4">
+			        
+					<!-- 首页列表最前广告位 --> <ins class="adsbygoogle"      style="display:block"      data-ad-client="ca-pub-9122002396983323"      data-ad-slot="4927757731"      data-ad-format="auto"      data-full-width-responsive="true"></ins> <script>      (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+				
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-secondary shadow-sm mb-4 border-0 rounded-0">
+					<div class="card-header">About</div>
+					<div class="card-body">
+						<div class="media">
+							<img src="https://cdn.jsdelivr.net/gh/kaygb/twentytwenty/kaygbcom/icon/f1.jpg" style="width:64px;height:64px" class="mr-3 rounded" alt="...">
+							<div class="media-body">
+								 <h5 class="mt-0" style="line-height:64px;height:64px">kaygb</h5>
+
+							</div>
+						</div>
+						<p class="card-text">Powered By <a href="//blog.kaygb.com" class="text-light" target="_blank">Kaygb's Blog</a> </p>
+
+            <span id="busuanzi_container_site_pv">访问量：<span id="busuanzi_value_site_pv"></span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- <div id="copyright">All rights reserved by ConfusayLab.</div> -->
+<!--<script type="text/javascript" src="/js/jquery.min.js?v=1"></script>-->
+<script src="/js/script.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>-->
+<!--<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<script>
+window.onload = function() {
+    setTimeout(function() {
+                let script = document.createElement("script");
+                script.setAttribute("async", "");
+                script.src = "//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
+                document.body.appendChild(script);
+    }, 2e3);
+    setTimeout(function() {
+            let script = document.createElement("script");
+            script.setAttribute("async", "");
+            script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+            document.body.appendChild(script);
+    }, 2e3);
+        
+}
+</script>
+</body>
+</html>
