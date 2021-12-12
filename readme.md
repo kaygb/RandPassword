@@ -4,6 +4,4 @@
 
 部署于GitHub Pages
 
-
-
-预览地址：https://randpassword.kaygb.com/
+https://lab.vwmwv.cn/RandPassword/
