@@ -12,6 +12,10 @@
 
     btn.onclick = function make() {
         length = document.getElementById("ipt_len").value-1; //密码长度
+        if(length>99999||length<1){
+            alert("密码长度仅限于1-99999之间");
+            return;
+        }
         switch (true) {
             //单项
             case num.checked && !upA.checked && !lowA.checked && !special.checked: //仅当数字被选中
