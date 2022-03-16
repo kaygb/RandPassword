@@ -12,8 +12,8 @@
 
     btn.onclick = function make() {
         length = document.getElementById("ipt_len").value-1; //密码长度
-        if(length>99999||length<1){
-            alert("密码长度仅限于1-99999之间");
+        if(length>99999||length<0){
+            alert("密码长度仅限于1-100000");
             return;
         }
         switch (true) {
